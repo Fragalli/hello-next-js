@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"  
+    "dev": "node server.js",
+    "now-build": "next build",
+    "start": "next start -p $PORT"
   },
   "author": "Vinicius Fragalli",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.8"
   }
 }
